@@ -21,6 +21,13 @@ def sub(x, y):
 def mod(x, y):
     return x%y
 
+def power(x, y):
+    if y == 0:
+        return 1
+    result = x
+    for i in range(y):
+        result * x
+    return result
 
 if __name__ == '__main__':
     main()
