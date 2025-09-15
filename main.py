@@ -20,7 +20,7 @@ def main():
         print("Quit Calculator - 0")
         choosed_option = int(input("Please choose an option: "))
 
-        if not first_operation:
+        if not first_operation and choosed_option > 0 and choosed_option <= 7:
             inp1 = str(input("Please enter the first number or press A to take the last result "))
             inp2 = str(input("Please enter the second number or press A to take the last result "))
             if inp1 == "A":
@@ -32,7 +32,7 @@ def main():
             else:
                 y = int(inp2)
 
-        else:
+        elif choosed_option > 0 and choosed_option <= 7:
             inp1 = str(input("Please enter the first number "))
             inp2 = str(input("Please enter the second number "))
         
