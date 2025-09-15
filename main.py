@@ -1,15 +1,17 @@
-running = True
 def main():
+    running = True
     x = 0
     y = 0
     while running:
         print("Welcome to your Calculator!")
-        print("Main Menu"
-              "Addition - 1"
-              "Subtraktion - 2"
-              "Multiplikation - 3"
-              "Division - 4"
-              "Quit Calculator - 0")
+        print("Main Menu")
+        print("Addition - 1")
+        print("Subtraktion - 2")
+        print("Multiplikation - 3")
+        print("Division - 4")
+        print("Teilbarkeit - 5")
+        print("Potenzen - 6")
+        print("Quit Calculator - 0")
         choosed_option = int(input("Please choose an option: "))
         if choosed_option == 1:
             x = int(input("Please enter the first number"))
@@ -27,6 +29,14 @@ def main():
             x = int(input("Please enter the first number"))
             y = int(input("Please enter the second number"))
             div(x, y)
+        if choosed_option == 5:
+            x = int(input("Please enter the first number"))
+            y = int(input("Please enter the second number"))
+            mod(x, y)
+        if choosed_option == 6:
+            x = int(input("Please enter the first number"))
+            y = int(input("Please enter the second number"))
+            power(x, y)
         if choosed_option == 0:
             running = False
 
