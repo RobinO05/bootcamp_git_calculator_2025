@@ -6,6 +6,7 @@ def main():
     running = True
     x = 0
     y = 0
+    first_operation = True
     while running:
         print("Welcome to your Calculator!")
         print("Main Menu")
@@ -20,35 +21,46 @@ def main():
         inp1 = str(input("Please enter the first number or press A to take the last result "))
         inp2 = str(input("Please enter the second number or press A to take the last result "))
         if inp1 == "A":
-            x = result
+            if not first_operation:
+                x = result
+            else: 
+                print("No previous result!")
+                continue
         else:
             x = int(inp1)
 
         if inp2 == "A":
-            x = result
+            if not first_operation:
+                y = result
+            else:
+                print("No previous result!")
+                continue
         else:
             y = int(inp2)
         
+        print(x,y)
         if choosed_option == 1:
             result = add(x, y)
-            time.sleep(2)
         if choosed_option == 2:
             result = sub(x, y)
-            time.sleep(2)
+
         if choosed_option == 3:
             result = mult(x, y)
-            time.sleep(2)
+
         if choosed_option == 4:
             result = div(x, y)
-            time.sleep(2)
+
         if choosed_option == 5:
             result = mod(x, y)
-            time.sleep(2)
+
         if choosed_option == 6:
             result = power(x, y)
-            time.sleep(2)
+
         if choosed_option == 0:
             running = False
+        
+        time.sleep(2)
+        first_operation = False
 
 # Operationen:
 def mult(x, y):
@@ -80,7 +92,7 @@ def power(x, y):
     if y == 0:
         return 1
     result = x
-    for i in range(y):
+    for i in range(y - 1):
         result *= x
     print(f"The result is {result}")
     return result
