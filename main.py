@@ -51,13 +51,8 @@ def main():
             result = mod(x, y)
         elif choosed_option == 6:
             result = power(x, y)
-<<<<<<< HEAD
-            time.sleep(2)
         elif choosed_option == 7:
             result = root(x, y)
-            time.sleep(2)
-=======
->>>>>>> 2b27a14f3aa3d62b2ac8b7fb2357cb84bab97f61
         elif choosed_option == 0:
             running = False
         else:
