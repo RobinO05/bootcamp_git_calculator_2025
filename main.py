@@ -29,10 +29,7 @@ def main():
             power(x, y)
         if choosed_option == 0:
             running = False
-
-
-
-
+            
 # Operationen:
 def mult(x, y):
     result = x * y
