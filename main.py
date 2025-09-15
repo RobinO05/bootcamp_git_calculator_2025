@@ -1,4 +1,5 @@
 import time
+from unittest import result
 
 
 def main():
@@ -16,8 +17,18 @@ def main():
         print("Potenzen - 6")
         print("Quit Calculator - 0")
         choosed_option = int(input("Please choose an option: "))
-        x = int(input("Please enter the first number "))
-        y = int(input("Please enter the second number "))
+        inp1 = str(input("Please enter the first number or press A to take the last result "))
+        inp2 = str(input("Please enter the second number or press A to take the last result "))
+        if inp1 == "A":
+            x = result
+        else:
+            x = int(inp1)
+
+        if inp2 == "A":
+            x = result
+        else:
+            y = int(inp2)
+        
         if choosed_option == 1:
             add(x, y)
             time.sleep(2)
