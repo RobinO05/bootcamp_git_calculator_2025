@@ -35,19 +35,29 @@ def main():
 
 # Operationen:
 def mult(x, y):
-    return x * y
+    result = x * y
+    print(result)
+    return result
 
 def div(x, y):
-    return x / y
+    result =  x / y
+    print(result)
+    return result
 
 def add(x, y):
-    return x + y
+    result = x + y
+    print(result)
+    return result
 
 def sub(x, y):
-    return x - y
+    result = x - y
+    print(result)
+    return result
 
 def mod(x, y):
-    return x%y
+    result =  x%y
+    print(result)
+    return result
 
 def power(x, y):
     if y == 0:
@@ -55,6 +65,7 @@ def power(x, y):
     result = x
     for i in range(y):
         result * x
+    print(result)
     return result
 
 if __name__ == '__main__':
