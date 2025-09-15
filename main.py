@@ -23,11 +23,11 @@ def main():
         if not first_operation and choosed_option > 0 and choosed_option <= 7:
             inp1 = str(input("Please enter the first number or press A to take the last result "))
             inp2 = str(input("Please enter the second number or press A to take the last result "))
-            if inp1 == "A":
+            if inp1.upper() == "A":
                 x = result
             else: 
                 x = int(inp1)
-            if inp2 == "A":
+            if inp2.upper() == "A":
                 y = result
             else:
                 y = int(inp2)
