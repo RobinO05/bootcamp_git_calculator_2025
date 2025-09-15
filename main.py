@@ -87,5 +87,8 @@ def power(x, y):
     print(f"The result is {result}")
     return result
 
+def root(x,y):
+    
+
 if __name__ == '__main__':
     main()
