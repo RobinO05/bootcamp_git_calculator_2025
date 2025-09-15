@@ -35,7 +35,9 @@ def main():
             inp1 = str(input("Please enter the first number "))
             inp2 = str(input("Please enter the second number "))
         
-        
+            x = int(inp1)
+            y = int(inp2)
+
         if choosed_option == 1:
             result = add(x, y)
         elif choosed_option == 2:
@@ -93,7 +95,7 @@ def power(x, y):
     return result
 
 def root(x,y):
-    
+    pass
 
 if __name__ == '__main__':
     main()
