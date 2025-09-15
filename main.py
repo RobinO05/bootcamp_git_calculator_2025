@@ -1,3 +1,6 @@
+import time
+
+
 def main():
     running = True
     x = 0
@@ -17,16 +20,22 @@ def main():
         y = int(input("Please enter the second number "))
         if choosed_option == 1:
             add(x, y)
+            time.sleep(2)
         if choosed_option == 2:
             sub(x, y)
+            time.sleep(2)
         if choosed_option == 3:
             mult(x, y)
+            time.sleep(2)
         if choosed_option == 4:
             div(x, y)
+            time.sleep(2)
         if choosed_option == 5:
             mod(x, y)
+            time.sleep(2)
         if choosed_option == 6:
             power(x, y)
+            time.sleep(2)
         if choosed_option == 0:
             running = False
             
