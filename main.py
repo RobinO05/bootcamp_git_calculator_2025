@@ -41,26 +41,23 @@ def main():
         print(x,y)
         if choosed_option == 1:
             result = add(x, y)
-            time.sleep(2)
         elif choosed_option == 2:
             result = sub(x, y)
-            time.sleep(2)
         elif choosed_option == 3:
             result = mult(x, y)
-            time.sleep(2)
         elif choosed_option == 4:
             result = div(x, y)
-            time.sleep(2)
         elif choosed_option == 5:
             result = mod(x, y)
-            time.sleep(2)
         elif choosed_option == 6:
             result = power(x, y)
-            time.sleep(2)
         elif choosed_option == 0:
             running = False
         else:
             print("Invalid input")
+
+        time.sleep(2)
+        first_operation = False
 
 # Operationen:
 def mult(x, y):
