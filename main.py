@@ -38,7 +38,7 @@ def main():
             time.sleep(2)
         if choosed_option == 0:
             running = False
-            
+
 # Operationen:
 def mult(x, y):
     result = x * y
@@ -70,7 +70,7 @@ def power(x, y):
         return 1
     result = x
     for i in range(y):
-        result * x
+        result *= x
     print(f"The result is {result}")
     return result
 
