@@ -16,6 +16,7 @@ def main():
         print("Division - 4")
         print("Teilbarkeit - 5")
         print("Potenzen - 6")
+        print("Wurzel - 7")
         print("Quit Calculator - 0")
         choosed_option = int(input("Please choose an option: "))
 
@@ -50,6 +51,13 @@ def main():
             result = mod(x, y)
         elif choosed_option == 6:
             result = power(x, y)
+<<<<<<< HEAD
+            time.sleep(2)
+        elif choosed_option == 7:
+            result = root(x, y)
+            time.sleep(2)
+=======
+>>>>>>> 2b27a14f3aa3d62b2ac8b7fb2357cb84bab97f61
         elif choosed_option == 0:
             running = False
         else:
@@ -95,7 +103,13 @@ def power(x, y):
     return result
 
 def root(x,y):
-    pass
+    if y < 2:
+        print("Invalid input")
+        return
+    else:
+        result = x**(1/y)
+        print(f"The result is {result}")
+        return result
 
 if __name__ == '__main__':
     main()
