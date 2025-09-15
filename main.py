@@ -30,28 +30,25 @@ def main():
             y = int(inp2)
         
         if choosed_option == 1:
-            add(x, y)
+            result = add(x, y)
             time.sleep(2)
         if choosed_option == 2:
-            sub(x, y)
+            result = sub(x, y)
             time.sleep(2)
         if choosed_option == 3:
-            mult(x, y)
+            result = mult(x, y)
             time.sleep(2)
         if choosed_option == 4:
-            div(x, y)
+            result = div(x, y)
             time.sleep(2)
         if choosed_option == 5:
-            mod(x, y)
+            result = mod(x, y)
             time.sleep(2)
         if choosed_option == 6:
-            power(x, y)
+            result = power(x, y)
             time.sleep(2)
         if choosed_option == 0:
             running = False
-
-
-
 
 # Operationen:
 def mult(x, y):
@@ -84,7 +81,7 @@ def power(x, y):
         return 1
     result = x
     for i in range(y):
-        result * x
+        result *= x
     print(f"The result is {result}")
     return result
 
