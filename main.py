@@ -19,52 +19,51 @@ def main():
         print("Wurzel - 7")
         print("Quit Calculator - 0")
         choosed_option = int(input("Please choose an option: "))
-        inp1 = str(input("Please enter the first number or press A to take the last result "))
-        inp2 = str(input("Please enter the second number or press A to take the last result "))
-        if inp1 == "A":
-            if not first_operation:
+
+        if not first_operation:
+            inp1 = str(input("Please enter the first number or press A to take the last result "))
+            inp2 = str(input("Please enter the second number or press A to take the last result "))
+            if inp1 == "A":
                 x = result
             else: 
-                print("No previous result!")
-                continue
-        else:
-            x = int(inp1)
-
-        if inp2 == "A":
-            if not first_operation:
+                x = int(inp1)
+            if inp2 == "A":
                 y = result
             else:
-                print("No previous result!")
-                continue
+                y = int(inp2)
+
         else:
-            y = int(inp2)
+            inp1 = str(input("Please enter the first number "))
+            inp2 = str(input("Please enter the second number "))
         
-        print(x,y)
+        
         if choosed_option == 1:
             result = add(x, y)
-            time.sleep(2)
         elif choosed_option == 2:
             result = sub(x, y)
-            time.sleep(2)
         elif choosed_option == 3:
             result = mult(x, y)
-            time.sleep(2)
         elif choosed_option == 4:
             result = div(x, y)
-            time.sleep(2)
         elif choosed_option == 5:
             result = mod(x, y)
-            time.sleep(2)
         elif choosed_option == 6:
             result = power(x, y)
+<<<<<<< HEAD
             time.sleep(2)
         elif choosed_option == 7:
             result = root(x, y)
             time.sleep(2)
+=======
+>>>>>>> 2b27a14f3aa3d62b2ac8b7fb2357cb84bab97f61
         elif choosed_option == 0:
             running = False
         else:
             print("Invalid input")
+            continue
+
+        time.sleep(2)
+        first_operation = False
 
 # Operationen:
 def mult(x, y):
