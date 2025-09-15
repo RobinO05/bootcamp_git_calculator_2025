@@ -38,7 +38,6 @@ def main():
         else:
             y = int(inp2)
         
-        print(x,y)
         if choosed_option == 1:
             result = add(x, y)
         elif choosed_option == 2:
@@ -55,6 +54,7 @@ def main():
             running = False
         else:
             print("Invalid input")
+            continue
 
         time.sleep(2)
         first_operation = False
